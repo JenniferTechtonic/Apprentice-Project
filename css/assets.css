@@ -1,0 +1,122 @@
+body {
+    background-color: #C6C6C6
+}
+
+header {}
+
+nav div {
+    background-color: #CFCFCF;
+    margin: 16px;
+}
+
+nav div a {
+    vertical-align: middle;
+    line-height: 36px;
+    padding: 10px 16px;
+    border-right: 1px solid #B9B9B9;
+    color: #000;
+    font-weight: bolder;
+}
+
+nav div a:hover {
+    color: #000;
+}
+
+#ludens {
+    display: inline-block;
+    margin: 22px 0 0 16px;
+    width: 200px;
+    height: 64px;
+    background: url(../img/sprite-sheet.png) 0 0 no-repeat;
+    background-size: 100% 380%;
+}
+
+header form input:last-child {
+    border-radius: 50px;
+    border: 1px solid #000;
+}
+
+.header-links {
+    float: right;
+}
+
+.header-links a {
+    margin-left: 15px;
+}
+
+.header-right-content {
+    float: right;
+    margin: 43px 16px 0 0;
+}
+
+section {
+    border-bottom: 1px solid #B9B9B9;
+    margin: 0 16px;
+}
+
+.carousel {
+    height: 350px;
+    margin: 0 16px 16px 0;
+    display: inline-block;
+    padding: 0;
+}
+
+.carousel .item {
+    height: 350px;
+}
+
+.carousel .item img {
+    width: 100%;
+}
+
+.carousel i {
+    margin-top: 100%;
+}
+
+.carousel-text {
+    margin-top: 15px;
+    display: inline-block;
+}
+
+.carousel-text .bold-text {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.carousel-text .small-text {
+    margin: 15px 0;
+}
+
+.carousel-text a {
+    text-decoration: underline;
+}
+
+article {
+    margin: 0 16px;
+}
+
+article .article-title {
+    font-weight: bold;
+}
+
+article .article-title-large {
+    font-weight: bold;
+    font-size: 16px;
+    padding-top: 15px;
+}
+
+.newsletter-wrapper div:first-child {
+    padding-top: 16px;
+}
+
+.newsletter-wrapper {
+    border-right: 1px solid #B9B9B9;
+}
+
+#reedus {
+    display: inline-block;
+    margin: width: 200px;
+    height: 64px;
+    background: url(../img/sprite-sheet.png) 0 0 no-repeat;
+    background-size: 100% 380%;
+}
