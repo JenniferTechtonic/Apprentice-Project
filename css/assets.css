@@ -92,7 +92,7 @@ section {
 }
 
 article {
-    margin: 0 16px;
+    padding-left: 0 16px;
 }
 
 article .article-title {
@@ -109,14 +109,69 @@ article .article-title-large {
     padding-top: 16px;
 }
 
+.newsletter-wrapper div:last-child {
+    padding-top: 16px;
+}
+
 .newsletter-wrapper {
     border-right: 1px solid #B9B9B9;
+    padding-right: 31px;
+}
+
+.newsletter-wrapper a {
+    float: right;
+    text-decoration: underline;
 }
 
 #reedus {
     display: inline-block;
-    margin: width: 200px;
-    height: 64px;
-    background: url(../img/sprite-sheet.png) 0 0 no-repeat;
-    background-size: 100% 380%;
+    width: 497px;
+    height: 300px;
+    background: url(../img/sprite-sheet.png) -45px -500px no-repeat;
+    background-size: 120% 280%;
+}
+
+.blog-wrapper div:first-child {
+    padding-top: 16px;
+}
+
+.blog-wrapper div:last-child {
+    padding-top: 16px;
+}
+
+.blog-wrapper {
+    border-right: 1px solid #B9B9B9;
+    padding: 0 31px;
+}
+
+.blog-wrapper a {
+    float: right;
+    text-decoration: underline;
+}
+
+.blog-wrapper>p>a {
+    float: none;
+}
+
+#mikkelsen {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: url(../img/sprite-sheet.png) -39px -293px no-repeat;
+    background-size: 500% 700%;
+}
+
+hr {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    border: 0;
+    border-top: 1px solid #B9B9B9;
+}
+
+#deltoro {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: url(../img/sprite-sheet.png) -35px -186px no-repeat;
+    background-size: 500% 700%;
 }
