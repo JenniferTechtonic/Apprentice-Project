@@ -6,7 +6,7 @@ header {}
 
 nav div {
     background-color: #CFCFCF;
-    margin: 16px;
+    margin: 2em;
 }
 
 nav div a {
@@ -24,16 +24,39 @@ nav div a:hover {
 
 #ludens {
     display: inline-block;
-    margin: 22px 0 0 16px;
+    margin: 2.1em 0 0 2em;
     width: 200px;
     height: 64px;
     background: url(../img/sprite-sheet.png) 0 0 no-repeat;
     background-size: 100% 380%;
 }
 
-header form input:last-child {
-    border-radius: 50px;
-    border: 1px solid #000;
+.btn {
+  background: #ffffff;
+  background-image: -webkit-linear-gradient(top, #ffffff, #d6d6d6);
+  background-image: -moz-linear-gradient(top, #ffffff, #d6d6d6);
+  background-image: -ms-linear-gradient(top, #ffffff, #d6d6d6);
+  background-image: -o-linear-gradient(top, #ffffff, #d6d6d6);
+  background-image: linear-gradient(to bottom, #ffffff, #d6d6d6);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #000000;
+  font-size: 14px;
+  padding: 2px 12px 2px 12px;
+  border: solid #666666 1px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #d6d6d6;
+  background-image: -webkit-linear-gradient(top, #d6d6d6, #ffffff);
+  background-image: -moz-linear-gradient(top, #d6d6d6, #ffffff);
+  background-image: -ms-linear-gradient(top, #d6d6d6, #ffffff);
+  background-image: -o-linear-gradient(top, #d6d6d6, #ffffff);
+  background-image: linear-gradient(to bottom, #d6d6d6, #ffffff);
+  text-decoration: none;
 }
 
 .header-links {
@@ -41,22 +64,22 @@ header form input:last-child {
 }
 
 .header-links a {
-    margin-left: 15px;
+    margin-left: 1em;
 }
 
 .header-right-content {
     float: right;
-    margin: 43px 16px 0 0;
+    margin: 3.7em 2em 0 0;
 }
 
 section {
     border-bottom: 1px solid #B9B9B9;
-    margin: 0 16px;
+    margin: 0 2em;
 }
 
 .carousel {
     height: 350px;
-    margin: 0 16px 16px 0;
+    margin: 0 1em 2em 0;
     display: inline-block;
     padding: 0;
 }
@@ -74,7 +97,7 @@ section {
 }
 
 .carousel-text {
-    margin-top: 15px;
+    margin-top: 1em;
     display: inline-block;
 }
 
@@ -84,7 +107,7 @@ section {
 }
 
 .carousel-text .small-text {
-    margin: 15px 0;
+    margin: 1em 0;
 }
 
 .carousel-text a {
@@ -92,30 +115,42 @@ section {
 }
 
 article {
-    padding-left: 0 16px;
+    padding: 0;
 }
 
 article .article-title {
     font-weight: bold;
 }
 
+.blog-header {
+    display: inline-block;
+    font-weight: bold;
+    padding: 2em 2em 0 2em;
+    border-right: 1px solid #B9B9B9;
+    border-left: 1px solid #B9B9B9;
+    width: 100%;
+}
+
 article .article-title-large {
     font-weight: bold;
     font-size: 16px;
-    padding-top: 15px;
+    padding-top: 1em;
 }
 
-.newsletter-wrapper div:first-child {
-    padding-top: 16px;
+article div:last-child {
+  border-bottom: 0;
 }
 
-.newsletter-wrapper div:last-child {
-    padding-top: 16px;
+.newsletter-wrapper div:first-child, .blog-wrapper div:first-child {
+    padding-top: 2em;
+}
+
+.newsletter-wrapper div:last-child{
+    padding-top: 1em;
 }
 
 .newsletter-wrapper {
-    border-right: 1px solid #B9B9B9;
-    padding-right: 31px;
+    padding: 0 2em;
 }
 
 .newsletter-wrapper a {
@@ -125,23 +160,21 @@ article .article-title-large {
 
 #reedus {
     display: inline-block;
-    width: 497px;
-    height: 300px;
-    background: url(../img/sprite-sheet.png) -45px -500px no-repeat;
+    width: 100%;
+    height: 280px;
+    background: url(../img/sprite-sheet.png) -45px -452px no-repeat;
     background-size: 120% 280%;
 }
 
-.blog-wrapper div:first-child {
-    padding-top: 16px;
-}
-
-.blog-wrapper div:last-child {
-    padding-top: 16px;
+.blog-wrapper-article {
+  border-right: 1px solid #B9B9B9;
+  border-left: 1px solid #B9B9B9;
 }
 
 .blog-wrapper {
-    border-right: 1px solid #B9B9B9;
-    padding: 0 31px;
+    margin: 0 2em;
+    border-bottom: 1px solid #B9B9B9;
+    min-height: 230px;
 }
 
 .blog-wrapper a {
@@ -153,6 +186,21 @@ article .article-title-large {
     float: none;
 }
 
+.blog-wrapper .blog-content {
+  padding-bottom: 2em;
+  height: 248px;
+  width: 100%;
+}
+
+.blog-wrapper .user-thumbnail {
+  float: left;
+  margin: 0 1.6em 1em 0;
+}
+
+.blog-date {
+  padding-bottom: 1em;
+}
+
 #mikkelsen {
     display: inline-block;
     width: 100px;
@@ -162,8 +210,7 @@ article .article-title-large {
 }
 
 hr {
-    margin-top: 16px;
-    margin-bottom: 16px;
+    margin: 0;
     border: 0;
     border-top: 1px solid #B9B9B9;
 }
@@ -174,4 +221,55 @@ hr {
     height: 100px;
     background: url(../img/sprite-sheet.png) -35px -186px no-repeat;
     background-size: 500% 700%;
+}
+
+.blog-form-wrapper {
+  padding: 2em;
+}
+
+.blog-form-wrapper label {
+  margin-bottom: 1em;
+}
+
+.blog-form-wrapper input {
+  display: block;
+  margin-bottom: 0.5em;
+  width: 65%;
+}
+
+.blog-form-wrapper .btn {
+  width: 70px;
+}
+
+textarea {
+  width: 100%;
+  height: 10em;
+}
+
+footer {
+  border-top: 1px solid #B9B9B9;
+  margin: 0 2em 2em 2em;
+  padding-top: 2em;
+}
+
+footer p {
+  font-size: 12px;
+  line-height: 0.8em;
+}
+
+footer p span {
+  margin-right: 1em;
+  border-right: 1px solid #000;
+  padding-right: 1em;
+}
+
+footer p span:last-child {
+  margin-right: 0;
+  border-right: 0;
+  padding-right: 0;
+}
+
+.padding-sides-none {
+  padding-left: 0;
+  padding-right: 0;
 }

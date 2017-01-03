@@ -8,8 +8,9 @@
     <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css" />
     <link rel="stylesheet" type="text/css" href="../css/assets.css" />
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+
 </head>
 
 <body>
@@ -22,7 +23,7 @@
             </div>
             <form>
                 <input type="text" placeholder="" required>
-                <input type="button" value="Search">
+                <input class="btn" type="button" value="Search">
             </form>
         </div>
     </header>
@@ -77,7 +78,7 @@
             <a href="javascript:void();">Read More</a>
         </div>
     </section>
-    <article class="col-lg-4 clearfix">
+    <article class="col-lg-4 padding-sides-none">
         <div class="newsletter-wrapper">
             <div>
                 <span class="article-title">Newsletter</span> | January, 2011
@@ -93,59 +94,63 @@
             </div>
         </div>
     </article>
-    <article class="col-lg-4 clearfix">
+    <article class="col-lg-4 padding-sides-none clearfix">
+      <div>
+          <span class="blog-header">From the Blog</span>
+      </div>
+      <div class="blog-wrapper-article">
         <div class="blog-wrapper">
-            <div>
-                <span class="article-title">From the Blog</span>
-            </div>
             <div class="article-title-large">
                 Blog Post Title
             </div>
-            <p>
+            <p class="blog-date">
                 January 1, 2011 by <a href="javascript:void();">John</a>
             </p>
-            <div id="mikkelsen"></div>
-            <div>
+            <div class="user-thumbnail" id="mikkelsen"></div>
+            <div class="blog-content">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eleifend ut turpis eu dapibus. Curabitur tincidunt semper leo, quis interdum felis aliquam sed. Curabitur a nisi nisi. Pellentesque eu ante at orci ultricies aliquam. Aliquam non facilisis
+                mi. Maecenas tempus tristique magna vitae ornare. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eleifend ut turpis eu dapibus. Curabitur tincidunt semper leo, quis interdum felis aliquam sed. Curabitur a nisi nisi. Pellentesque eu ante at orci ultricies aliquam. Aliquam non facilisis
                 mi. Maecenas tempus tristique magna vitae ornare. In consequat...
                 <a href="javascript:void();">Read More</a>
             </div>
-            <hr />
-            <div>
-                <span class="article-title">From the Blog</span>
-            </div>
+          </div>
+          <div class="blog-wrapper">
             <div class="article-title-large">
                 Blog Post Title
             </div>
-            <p>
+            <p  class="blog-date">
                 January 1, 2011 by <a href="javascript:void();">John</a>
             </p>
-            <div id="deltoro"></div>
-            <div>
+            <div class="user-thumbnail" id="deltoro"></div>
+            <div class="blog-content">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eleifend ut turpis eu dapibus. Curabitur tincidunt semper leo, quis interdum felis aliquam sed. Curabitur a nisi nisi. Pellentesque eu ante at orci ultricies aliquam. Aliquam non facilisis
+                mi. Maecenas tempus tristique magna vitae ornare. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eleifend ut turpis eu dapibus. Curabitur tincidunt semper leo, quis interdum felis aliquam sed. Curabitur a nisi nisi. Pellentesque eu ante at orci ultricies aliquam. Aliquam non facilisis
                 mi. Maecenas tempus tristique magna vitae ornare. In consequat...
                 <a href="javascript:void();">Read More</a>
             </div>
+          </div>
+          </div>
         </div>
     </article>
-    <aside class="clearfix">
-      <div class="col-lg-4 blog-wrapper">
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="text" placeholder="Your Email Address" required>
-            <input type="button" value="Submit">
+    <article class="col-lg-4 clearfix padding-sides-none">
+      <div class="blog-form-wrapper">
+        <label>Add new post</label>
+        <form id="new-blog-form">
+            <input id="user_name" type="text" placeholder="Your Name" required>
+            <input id="user_email" type="text" placeholder="Your Email Address" required>
+            <input id="blog_title" type="text" placeholder="Blog Post title" required>
+            <textarea id="blog_content" type="text" maxlength="623" required>Blog content</textarea>
+            <input class="btn" type="button" value="Submit" onclick="addNewPost();">
         </form>
       </div>
-    </aside>
-    <footer>
-
+    </article>
+    <footer class="col-lg-12">
+      <p><span>&copy; Kojima Productions</span><span>Tokyo, Japan</span><span>123-123-1234</span></p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eleifend ut turpis eu dapibus.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </footer>
-</body>
 
-
-</footer>
-<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="../js/apprentice-page.js"></script>
 </body>
 
 
