@@ -145,10 +145,6 @@ article div:last-child {
     padding-top: 2em;
 }
 
-.newsletter-wrapper div:last-child{
-    padding-top: 1em;
-}
-
 .newsletter-wrapper {
     padding: 0 2em;
 }
@@ -160,10 +156,12 @@ article div:last-child {
 
 #reedus {
     display: inline-block;
-    width: 100%;
+    width: 490px;
     height: 280px;
     background: url(../img/sprite-sheet.png) -45px -452px no-repeat;
     background-size: 120% 280%;
+    float: left;
+    margin: 0 2em 1em 0;
 }
 
 .blog-wrapper-article {
@@ -272,4 +270,35 @@ footer p span:last-child {
 .padding-sides-none {
   padding-left: 0;
   padding-right: 0;
+}
+
+@media only screen and (max-device-width : 1024px) {
+  .carousel-text {
+    margin-bottom: 2em;
+    padding: 0;
+  }
+  .carousel {
+    margin: 0 0 2em 0;
+  }
+  .newsletter-article {
+    margin: 0 2em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #B9B9B9;
+  }
+  .newsletter-wrapper {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-device-width : 768px){
+  .blog-content {
+    max-height: 130px;
+  }
+  .blog-wrapper-article, .blog-header {
+    border-left: 0;
+    border-right: 0;
+  }
+  article .blog-wrapper-article div:last-child {
+    border-bottom: 1px solid #B9B9B9;
+  }
 }
