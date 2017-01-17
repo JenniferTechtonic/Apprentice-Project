@@ -74,7 +74,7 @@ nav div a:hover {
 
 section {
     border-bottom: 1px solid #B9B9B9;
-    margin: 0 2em;
+    margin: 0 0 0 2em;
 }
 
 .carousel {
@@ -156,10 +156,10 @@ article div:last-child {
 
 #reedus {
     display: inline-block;
-    width: 490px;
+    width: 576px;
     height: 280px;
-    background: url(../img/sprite-sheet.png) -45px -452px no-repeat;
-    background-size: 120% 280%;
+    background: url(../img/sprite-sheet.png) -3px -452px no-repeat;
+    background-size: 104% 280%;
     float: left;
     margin: 0 2em 1em 0;
 }
@@ -247,7 +247,7 @@ textarea {
 footer {
   border-top: 1px solid #B9B9B9;
   margin: 0 2em 2em 2em;
-  padding-top: 2em;
+  padding: 2em 0 0 0;
 }
 
 footer p {
@@ -272,7 +272,7 @@ footer p span:last-child {
   padding-right: 0;
 }
 
-@media only screen and (max-device-width : 1024px) {
+@media only screen and (max-device-width : 1200px) {
   .carousel-text {
     margin-bottom: 2em;
     padding: 0;
@@ -281,12 +281,21 @@ footer p span:last-child {
     margin: 0 0 2em 0;
   }
   .newsletter-article {
-    margin: 0 2em;
+    margin: 0 0 0 2em;
     padding-bottom: 1em;
     border-bottom: 1px solid #B9B9B9;
   }
   .newsletter-wrapper {
     padding: 0;
+  }
+  nav div {
+      margin: 2em 0 2em 2em;
+  }
+  .header-right-content, .blog-wrapper {
+    margin-right: 0;
+  }
+  .blog-form-wrapper{
+  padding-right: 0;
   }
 }
 
