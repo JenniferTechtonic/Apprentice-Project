@@ -10,6 +10,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/validator.min.js"></script>
 
 </head>
 
@@ -104,7 +105,7 @@
                 Blog Post Title
             </div>
             <div>
-              <p class="blog-date">January 1, 2011</p> by 
+              <p class="blog-date">January 1, 2011</p> by
               <a href="javascript:void();" class="author-name">John</a>
             </div>
             <div class="user-thumbnail" id="mikkelsen"></div>
@@ -137,12 +138,12 @@
     <article class="col-lg-4 col-md-6 clearfix padding-sides-none">
       <div class="blog-form-wrapper">
         <label>Add new post</label>
-        <form id="new-blog-form">
+        <form role="form" data-toggle="validator" id="new-blog-form">
             <input id="user_name" type="text" placeholder="Your Name" required>
-            <input id="user_email" type="text" placeholder="Your Email Address" required>
+            <input id="user_email" pattern="^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$" type="email" placeholder="Your Email Address" required>
             <input id="blog_title" type="text" placeholder="Blog Post title" required>
             <textarea id="blog_content" type="text" maxlength="623" required>Blog content</textarea>
-            <input class="btn" type="button" value="Submit" onclick="addNewPost();">
+            <input class="btn post-new-blog" type="submit" value="Submit" onclick="addNewPost();">
         </form>
       </div>
     </article>

@@ -1,4 +1,6 @@
+
 function addNewPost() {
+  if (!$('.post-new-blog').hasClass('disabled')) {
     var $blogWrapper = $('.blog-wrapper-article');
     var userName = $('#user_name').val();
     var blogTitle = $('#blog_title').val();
@@ -32,4 +34,5 @@ function addNewPost() {
   $(".blog-wrapper-article").prepend(newPost);
 
     $('#new-blog-form').children('#user_name, #user_email, #blog_title, textarea').val('')
+  }
 };
