@@ -175,7 +175,7 @@ article div:last-child {
     min-height: 230px;
 }
 
-.blog-wrapper a {
+.blog-content a {
     float: right;
     text-decoration: underline;
 }
@@ -197,6 +197,7 @@ article div:last-child {
 
 .blog-date {
   padding-bottom: 1em;
+  display: inline-block;
 }
 
 #mikkelsen {
